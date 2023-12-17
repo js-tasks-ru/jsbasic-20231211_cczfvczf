@@ -12,7 +12,7 @@ function print(text) {
 function isValid(name) {
   // ваш код...
   let answer = true;
-  if(name.length < 4 || name.indexOf(" ", 0) !== -1 || name == 'null') {
+  if(name == null || name.length < 4 || name.indexOf(" ", 0) !== -1) {
     answer = false;
   }
   return answer;
